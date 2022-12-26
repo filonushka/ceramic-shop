@@ -89,17 +89,6 @@ body {
   min-width: 0;
 }
 
-/* 
-Стили будут применяться ко всем классам содержащим *__container
-Например, header__container, main__container и т.д. 
-Снипет (HTML): cnt
-*/
-[class*=__container] {
-  max-width: rem(1180px);
-  box-sizing: content-box;
-  margin: 0 auto;
-}
-
 /* Указываем box sizing */
 *,
 *::before,
@@ -186,6 +175,7 @@ select {
   display: flex;
   align-items: center;
   width: 1180px;
+  margin: auto;
 }
 .body-header__logo {
   text-decoration: none;
@@ -338,6 +328,7 @@ select {
   display: flex;
   align-items: center;
   width: 1180px;
+  margin: auto;
 }
 .catalog-header__menu {
   display: flex;
@@ -418,11 +409,14 @@ select {
 
 .banner {
   background: url("./src/img/slider-picture.png"), radial-gradient(63.57% 111.48% at 50% 50%, #d3b482 0%, #ac9370 100%);
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 .banner__container {
   display: flex;
   align-items: center;
   width: 1180px;
+  margin: auto;
 }
 .banner__body {
   height: 400px;
@@ -537,6 +531,7 @@ label {
   display: flex;
   align-items: center;
   width: 1180px;
+  margin: auto;
 }
 .about-us__content {
   padding-top: 111.58px;
@@ -561,18 +556,14 @@ label {
 .footer__container {
   display: flex;
   align-items: center;
+  margin: auto;
   width: 1180px;
 }
 
 .footer-row1 {
   display: flex;
   background-color: #484848;
-  padding: 62px 0 67px 0;
-}
-.footer-row1__container {
-  display: flex;
-  align-items: center;
-  width: 1180px;
+  height: 307px;
 }
 
 .footer-subscription {
@@ -663,9 +654,5 @@ label {
   line-height: 24px;
   color: #5f5f5f;
   padding: 20px 0;
-}
-.footer-row2__container {
-  display: flex;
-  align-items: center;
-  width: 1180px;
+  height: 64px;
 }/*# sourceMappingURL=index.css.map */
