@@ -1,19 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>КЕРМАМИКЪ</title>
-  </head>
-  <body>
-    <header class="header"></header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/scss/iconsfont.css" />
+  <link rel="stylesheet" href="/index.css" />
+  <title>КЕРМАМИКЪ</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__body body-header">
+        <div class="body-header__container">
+          <a href="" class="body-header__logo">
+            <img src="./src/iconsfont/logo.svg" alt="logo" />
+            <p>фабрика декора</p>
+          </a>
+          <div class="body-header__phones phones-header">
+            <a href="tel:+79267803663" class="phones-header_number">+7 926 780 3663</a>
+            <a href="" class="phones-header_callback">Обратный звонок</a>
+          </div>
+          <div class="body-header__search">
+            <form action="#" class="search-header">
+              <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поиск"
+                class="search-header__input" />
+              <button type="submit" class="search-header__button _icon-search"></button>
+            </form>
+          </div>
+          <div class="body-header__actions actions-header">
+            <a href="" class="actions-header__favorite _icon-favorite">
+              <span>7</span>
+            </a>
+            <div class="cart">
+              <a href="" class="actions-header__cart _icon-cart"><span>10</span></a>
+              <span class="cart__sum">15 354 руб.</span>
+            </div>
+            <a href="" class="actions-header__user _icon-user"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__catalog catalog-header">
+        <div class="body-header__container">
+          <div class="catalog-header__menu">
+            <div class="dropdown-menu">
+              <button class="catalog-header__button _icon-arrow-bottom">
+                <label for="dropdown-toggle">Каталог</label>
+              </button>
+
+              <div class="dropdown-menu__wrapper">
+                <input type="checkbox" id="dropdown-toggle" hidden>
+                <label for="dropdown-toggle" class="dropdown-menu__close"></label>
+
+                <ul class="catalog-header__list list-menu">
+                  <li class="catalog-header__item"><a href="#">ВСЕ ТОВАРЫ</a></li>
+                  <li class="catalog-header__item"><a href="#">РОЗЕТКИ</a></li>
+                  <li class="catalog-header__item"><a href="#">ВЫКЛЮЧАТЕЛИ</a></li>
+                  <li class="catalog-header__item">
+                    <a href="#">РАСПАЕЧНЫЕ КОРОБКИ</a>
+                  </li>
+                  <li class="catalog-header__item">
+                    <a href="#">КАБЕЛЬНЫЕ ИЗОЛЯТОРЫ</a>
+                  </li>
+                  <li class="catalog-header__item"><a href="#">ВТУЛКИ</a></li>
+                  <li class="catalog-header__item"><a href="#">РАМКИ</a></li>
+                  <li class="catalog-header__item"><a href="#">ПРОВОДА</a></li>
+                  <li class="catalog-header__item"><a href="#">СВЕТИЛЬНИКИ</a></li>
+                  <li class="catalog-header__item"><a href="#">ЛАМПЫ</a></li>
+                  <li class="catalog-header__item"><a href="#">АКСЕССУАРЫ</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="catalog-header__nav">
+              <a href="" class="catalog__header__item">Главная</a>
+              <a href="" class="catalog__header__item">О нас</a>
+              <a href="" class="catalog__header__item">Акции</a>
+              <a href="" class="catalog__header__item">Новости</a>
+              <a href="" class="catalog__header__item">Контакты</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <main class="main">
-      <section class="banner"></section>
-      <section class="about-us"></section>
+      <section class="banner">
+        <div class="banner__container">
+          <div class="banner__body">
+            <div class="banner__slider">
+              <input type="radio" name="slider" id="slide-1" hidden checked>
+              <input type="radio" name="slider" id="slide-2" hidden>
+              <input type="radio" name="slider" id="slide-3" hidden>
+              <input type="radio" name="slider" id="slide-4" hidden>
+
+              <ul class="track">
+                <li class="slide">
+                  <div class="slide-banner__content">
+                    <h2 class="slide-banner__title">
+                      Ищете где купить механизмы Salvador?
+                    </h2>
+                    <div class="slide-banner__subtitle">
+                      Осуществляя ее заказ на общую сумму от 100 000 рублей, под
+                      все заказанные выключатели и розетки для открытой проводки
+                      в подарок вы получаете рамки из натурального бука нашего
+                      собственного производства.
+                    </div>
+                    <a href="" class="slide-banner__button button">Подробнее</a>
+                  </div>
+                </li>
+                <li class="slide">
+                  <div class="slide-banner__content">
+                    <h2 class="slide-banner__title">
+                      Slide 2
+                    </h2>
+                    <div class="slide-banner__subtitle">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam deserunt consectetur nisi
+                      nobis ad eos sapiente, culpa est esse totam possimus soluta sed provident accusantium quae a,
+                      quibusdam nihil.
+                    </div>
+                    <a href="" class="slide-banner__button button">Подробнее</a>
+                  </div>
+                </li>
+                <li class="slide">
+                  <div class="slide-banner__content">
+                    <h2 class="slide-banner__title">
+                      Slide 3
+                    </h2>
+                    <div class="slide-banner__subtitle">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, excepturi alias soluta nihil
+                      aliquam natus explicabo possimus ipsum! Soluta voluptatibus vel excepturi sequi, inventore aliquid
+                      culpa consequuntur quas esse neque!
+                    </div>
+                    <a href="" class="slide-banner__button button">Подробнее</a>
+                  </div>
+                </li>
+                <li class="slide">
+                  <div class="slide-banner__content">
+                    <h2 class="slide-banner__title">
+                      Slide 4
+                    </h2>
+                    <div class="slide-banner__subtitle">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere labore, possimus optio cum
+                      exercitationem iste vitae harum magnam nemo culpa quod alias. Ad expedita, similique odit illum
+                      atque aliquid facilis.
+                    </div>
+                    <a href="" class="slide-banner__button button">Подробнее</a>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="dots">
+                <li class="dot">
+                  <label for="slide-1"></label>
+                </li>
+                <li class="dot">
+                  <label for="slide-2"></label>
+                </li>
+                <li class="dot">
+                  <label for="slide-3"></label>
+                </li>
+                <li class="dot">
+                  <label for="slide-4"></label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us">
+        <div class="about-us__container">
+          <div class="about-us__content">
+            <h2 class="about-us__title">Коротко о нас</h2>
+
+            <div class="about-us__subtitle">
+              Мы, Фабрика Декора "КерамикЪ", уже много лет специализируемся на
+              ретро электрике. За годы существования из увлекшихся любителей с
+              горящими глазами наша команда превратилась в настоящих с большой
+              буквы Профессионалов своего дела. Но искра в наших глазах
+              совершенно не затухла! Сегодня, мы планомерно работаем над тем,
+              чтоб вырастить в таких же Профессионалов новых членов нашей
+              команды
+            </div>
+
+            <a href="" class="about-us__button button">Подробнее</a>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer"></footer>
-    КЕРАМИКЪ
-  </body>
+
+    <footer class="footer">
+      <div class="footer-row1">
+        <div class="footer__container">
+          <div class="footer-subscription">
+            <div class="footer-subscription__title">ПОДПИСАТЬСЯ</div>
+
+            <div class="footer-subscription__subtitle">
+              Подпишитесь на наши новости и узнавайте первыми о самом
+              интересном, что происходит в увлекательном мире ретро электрики.
+            </div>
+
+            <form class="footer-subscription__form">
+              <input class="footer-subscription__input" type="email" placeholder="Ваш E-mail адрес" />
+              <button class="footer-subscription__button">Подписаться</button>
+            </form>
+          </div>
+
+          <div class="footer-column__nav">
+            <div class="nav__title">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</div>
+
+            <ul class="nav__list">
+              <li class="nav__item"><a href="">Сотрудничество</a></li>
+              <li class="nav__item"><a href="">Наши контакты</a></li>
+              <li class="nav__item"><a href="">Монтаж</a></li>
+              <li class="nav__item"><a href="">Карта сайта</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column__nav">
+            <div class="nav__title">КАК ПРИОБРЕСТИ</div>
+
+            <ul class="nav__list">
+              <li class="nav__item"><a href="">Доставка</a></li>
+              <li class="nav__item"><a href="">Оплата</a></li>
+              <li class="nav__item"><a href="">Публичная офферта</a></li>
+              <li class="nav__item"><a href="">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column__nav">
+            <div class="nav__title">ЛИЧНОЕ ПРОСТРАНСТВО</div>
+            <ul class="nav__list">
+              <li class="nav__item"><a href="">Войти в кабинет</a></li>
+              <li class="nav__item">
+                <a href="">История заказов</a>
+              </li>
+              <li class="nav__item">
+                <a href="">Избранные товары</a>
+              </li>
+              <li class="nav__item">
+                <a href="">Подписка на новости</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-row2">
+        <div class="footer__container">
+          <p>Copyright © 2019 | ФД "КерамикЪ"</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
