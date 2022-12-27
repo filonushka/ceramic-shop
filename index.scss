@@ -559,7 +559,6 @@ label {
 
   &__container {
     display: flex;
-    align-items: center;
     margin: auto;
     width: $maxWidthContainer;
   }
@@ -635,6 +634,7 @@ label {
 }
 .footer-column {
   // .footer-column__nav
+  height: 178px;
 
   &__nav:not(:last-child) {
     padding-right: 67px;
@@ -665,7 +665,7 @@ label {
     font-size: 14px;
     line-height: 24px;
     &:not(:last-child) {
-      padding-bottom: 32px;
+      padding-bottom: 22px;
     }
     a {
       color: #b0b0b0;

@@ -555,7 +555,6 @@ label {
 }
 .footer__container {
   display: flex;
-  align-items: center;
   margin: auto;
   width: 1180px;
 }
@@ -616,6 +615,9 @@ label {
   background: #8d8d8d;
 }
 
+.footer-column {
+  height: 178px;
+}
 .footer-column__nav:not(:last-child) {
   padding-right: 67px;
 }
@@ -637,7 +639,7 @@ label {
   line-height: 24px;
 }
 .nav__item:not(:last-child) {
-  padding-bottom: 32px;
+  padding-bottom: 22px;
 }
 .nav__item a {
   color: #b0b0b0;
